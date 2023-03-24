@@ -75,6 +75,6 @@ reg = StackingRegressor(
                                            random_state=42)
  ) 
 
-reg.fit(gm_maps_masked, age)
-reg.fit(gm_maps_masked, age).score(X_test, age_test)
-#pred=reg.fit(gm_maps_masked, age).predict(new_gm_maps_masked)
+reg.fit(X, age)
+#reg.fit(X, age).score(X_test, age_test)
+#pred=reg.fit(X, age).predict(X_test)
